@@ -3,6 +3,9 @@ Module Gallery
 
 A simple front-end pattern library.
 
+## Demo
+[http://modulegallery.keithwyland.com/](http://modulegallery.keithwyland.com/)
+
 ## How to Use It
 1. Download the zip
 2. In the /patterns folder, add your own folders with HTML snippets.
