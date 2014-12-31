@@ -7,34 +7,39 @@ A simple front-end pattern library.
 1. Download the zip
 2. In the /patterns folder, add your own folders with HTML snippets.
 3. In the /patterns folder, create .json files (I like to name mine the same as I name the folders, the name of the module/pattern)
-4. In the .json files set the properties:
+4. In the .json files set the properties (more on that below)
+5. Navigate to index.php (with a server running, of course, if you're doing this locally)
+6. You can click on the titles of modules/patterns to display only that one.
 
+### .json files
+Here's the rundown on what each property is:
+```
+{
+  "title" : "Name Of Module/Pattern",
+  "types" : [
     {
-      "title" : "Name Of Module/Pattern",
-
-      "types" : [
-        {
-          "name" : "Name of This Type",
-          "src"  : "relative/path/to/html/snippet.html",
-          "info" : "Any notes you want to appear with the markup. Can be blank."
-        }
-      ]
+   "name" : "Name of This Type",
+   "src"  : "relative/path/to/html/snippet.html",
+   "info" : "Any notes you want to appear with the markup. Can be blank."
     }
-
+  ]
+}
+```
 For example, the demo buttons.json looks like this:
-
+```
+{
+  "title" : "buttons",
+  "types" : [
     {
-      "title" : "buttons",
-      "types" : [
-        {
-          "name" : "normal",
-          "src" : "buttons/index.html",
-          "info" : ""
-        },
-        {
-          "name" : "special",
-          "src" : "buttons/special.html",
-          "info" : ""
-        }
-      ]
+      "name" : "normal",
+      "src" : "buttons/index.html",
+      "info" : ""
+    },
+    {
+      "name" : "special",
+      "src" : "buttons/special.html",
+      "info" : ""
     }
+  ]
+}
+```
