@@ -1,4 +1,4 @@
-module-gallery
+Module Gallery
 ==============
 
 A simple front-end pattern library.
