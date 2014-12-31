@@ -1,8 +1,6 @@
 .mg-body {
 	background: transparent;
-	margin: 0 auto;
 	padding: 0;
-	max-width: 1024px;
 }
 
 .mg-head, .mg-pattern-head, .mg-source, .mg-tabs {
@@ -47,10 +45,7 @@
 
 .mg-source {
 	background: #eee;
-}
-
-.mg-source {
-	*zoom: 1;
+	display: block;
 }
 
 .mg-source:before, .mg-source:after {
@@ -64,6 +59,7 @@
 
 .mg-source > summary {
 	cursor: pointer;
+	display: block;
 	margin-bottom: 0.5rem;
 }
 
@@ -170,4 +166,9 @@
 
 .mg-tabs > .active {
 	display: block;
+}
+
+.mg-footer {
+	margin-top: 3rem;
+	border-top: 1px solid #efefef;
 }

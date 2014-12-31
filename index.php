@@ -33,7 +33,7 @@
 		sort($files);
 		
 		echo '<h1 class="mg-head">Module Gallery</h1>';
-		echo '<p>A simple front-end pattern library. <a href="https://github.com/keithwyland/module-gallery">Check it out on GitHub.</a></p>';
+		echo '<p class="mg-text">A simple front-end pattern library. <a href="https://github.com/keithwyland/module-gallery">Check it out on GitHub.</a></p>';
 	endif;
 
 	foreach ($files as $file):
@@ -91,6 +91,10 @@
 	endforeach;
 	
 ?>
+
+<footer class="mg-footer">
+	<p><small>Module Gallery by <a href="http://twitter.com/keithwyland">Keith Wyland</a></small></p>
+</footer>
 
 <script src="assets/js/jquery-1.11.1.min.js"></script>
 <script src="assets/js/transformer-tabs.js"></script>
