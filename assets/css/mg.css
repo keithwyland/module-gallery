@@ -14,7 +14,8 @@
 	background: white;
 }
 
-.mg-source {
+.mg-source,
+.mg-code {
 	font-family: monospace;
 }
 
