@@ -1,0 +1,172 @@
+.mg-body {
+	background: transparent;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1024px;
+}
+
+.mg-head, .mg-pattern-head, .mg-source, .mg-tabs {
+	margin: 0 auto;
+}
+
+.mg-head, .mg-pattern-head, .mg-source, .mg-tabs-nav, .mg-text {
+	font-family: sans-serif;
+	background: white;
+}
+
+.mg-source {
+	font-family: monospace;
+}
+
+.mg-pattern-head, .mg-source {
+	padding: .5rem 1rem;
+}
+
+.mg-head, .mg-text {
+	padding: 0 1rem;
+	margin: 1rem 0;
+}
+
+.mg-pattern-head,
+.mg-pattern-head a {
+	background: #222;
+	color: #eee;
+	text-decoration: none;
+}
+
+.mg-pattern-head a:hover,
+.mg-pattern-head a:focus {
+	text-decoration: underline;
+}
+
+.mg-link {
+	color: blue;
+	text-decoration: underline;
+}
+
+.mg-source {
+	background: #eee;
+}
+
+.mg-source {
+	*zoom: 1;
+}
+
+.mg-source:before, .mg-source:after {
+	content: " ";
+	display: table;
+}
+
+.mg-source:after {
+	clear: both;
+}
+
+.mg-source > summary {
+	cursor: pointer;
+	margin-bottom: 0.5rem;
+}
+
+.mg-code {
+	width: 50%;
+	float: left;
+}
+
+.mg-caption {
+	width: 48%;
+	float: right;
+}
+
+@media ( max-width : 700px) {
+	.mg-code, .mg-caption {
+		width: 100%;
+		float: none;
+	}
+}
+
+.mg-tabs-nav ul {
+	list-style: none;
+	padding: 0 0 0 .1em;
+	margin: 0;
+	border-bottom: 3px solid #000;
+	background: #333;
+}
+
+.mg-tabs-nav li {
+	display: inline-block;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+.mg-tabs-nav li a.active {
+	border-bottom-color: #eee;
+}
+
+.mg-tabs-nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	color: #fff;
+}
+
+.mg-tabs-nav a:hover {
+	background: #111;
+}
+
+.mg-tabs-nav a.active {
+	background: #eee;
+	color: #333;
+	border-bottom: 3px solid transparent;
+	position: relative;
+	bottom: -3px;
+}
+
+@media ( max-width : 700px) {
+	.mg-tabs-nav ul {
+		border-bottom: 0;
+		overflow: hidden;
+		position: relative;
+		background: #333;
+	}
+	.mg-tabs-nav ul::after {
+		color: #eee;
+		content: "☰";
+		position: absolute;
+		top: 8px;
+		right: 15px;
+		z-index: 2;
+		pointer-events: none;
+	}
+	.mg-tabs-nav ul.open a {
+		position: relative;
+		display: block;
+	}
+	.mg-tabs-nav ul.open a.active {
+		color: #fff;
+		background: #000;
+	}
+	.mg-tabs-nav li {
+		display: block;
+	}
+	.mg-tabs-nav a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.mg-tabs-nav a.active {
+		border: 0;
+		z-index: 1;
+		color: #eee;
+		background: #333;
+		/* fallback */
+	}
+}
+
+.mg-tabs > div {
+	display: none;
+}
+
+.mg-tabs > .active {
+	display: block;
+}

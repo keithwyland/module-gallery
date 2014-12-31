@@ -1,0 +1,10 @@
+{
+  "title" : "media block",
+  "types" : [
+    {
+      "name" : "normal",
+      "src" : "media/index.html",
+      "info" : ""
+    }
+  ]
+}

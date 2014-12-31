@@ -1,0 +1,15 @@
+{
+  "title" : "buttons",
+  "types" : [
+    {
+      "name" : "normal",
+      "src" : "buttons/index.html",
+      "info" : "Here is where you'd put notes about this particular module, how to use it, where it gets used, etc."
+    },
+    {
+      "name" : "special",
+      "src" : "buttons/special.html",
+      "info" : ""
+    }
+  ]
+}
