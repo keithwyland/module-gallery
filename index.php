@@ -33,7 +33,7 @@
 		sort($files);
 		
 		echo '<h1 class="mg-head">Module Gallery</h1>';
-		
+		echo '<p>A simple front-end pattern library. <a href="#https://github.com/keithwyland/module-gallery">Check it out on GitHub.</a></p>';
 	endif;
 
 	foreach ($files as $file):
