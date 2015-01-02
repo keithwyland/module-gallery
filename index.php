@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
 	<title>Module Gallery</title>
 	
 	<link rel="stylesheet" href="assets/css/mg.css" />
